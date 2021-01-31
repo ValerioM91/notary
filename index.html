@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Notary</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo" class="logo" />
+      <h1>Notary</h1>
+      <h2>Discover more about your books</h2>
+    </header>
+
+    <div class="container">
+      <div class="book">
+        <h3 class="book__title">Alice in Wonderland</h3>
+        <div class="book__text">
+          <span class="book__text--1">
+            Start choosing a book from the right</span
+          >
+          <span class="book__text--2">Start choosing a book from the top</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="info__box choose-book">
+          <h4 class="info__box--heading">Choose one of this books</h4>
+          <div class="info__box--results">
+            <a
+              href="#"
+              class="book-link"
+              data-link="books/AliceInWonderland.txt"
+              >Alice in Wonderland</a
+            >
+            <a href="#" class="book-link" data-link="books/LOTR.txt"
+              >Lord of the Rings</a
+            >
+            <a href="#" class="book-link" data-link="books/JekyllAndHyde.txt"
+              >Jekyll and Hyde</a
+            >
+          </div>
+        </div>
+
+        <div class="search info__box">
+          <h4 class="info__box--heading">Search for a word</h4>
+          <div class="search__box">
+            <input type="text" class="search__input" required />
+            <button class="search__btn">Search</button>
+          </div>
+          <div class="info__box--results search__results"></div>
+        </div>
+
+        <div class="info__box">
+          <h4 class="info__box--heading">Most used words</h4>
+          <div class="info__box--results">
+            <ul class="most-used"></ul>
+          </div>
+        </div>
+
+        <div class="info__box">
+          <h4 class="info__box--heading">Least used words</h4>
+          <div class="info__box--results">
+            <ul class="least-used"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
