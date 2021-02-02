@@ -2,6 +2,7 @@
 
 const bookContainer = document.querySelector('.book__text');
 const bookLinks = document.querySelectorAll('.book-link');
+const bookTitle = document.querySelector('.book__title');
 const mostUsedContainer = document.querySelector('.most-used');
 const leastUsedContainer = document.querySelector('.least-used');
 const searchInput = document.querySelector('.search__input');
@@ -29,6 +30,8 @@ bookLinks.forEach(book =>
   book.addEventListener('click', function () {
     const link = book.dataset.link;
     loadBook(link);
+    console.log(bookTitle.textContent, book.text);
+    bookTitle.innerHTML = book.text;
   })
 );
 
